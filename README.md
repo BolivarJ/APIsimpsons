@@ -16,7 +16,7 @@ Una aplicación interactiva construida con **React + Vite** y **Tailwind CSS** q
 - **Tailwind CSS** 
 - **The Simpsons API** 
 
-## 📖 Sobre la API
+## Sobre la API
 
 Esta aplicación consume [The Simpsons API](https://thesimpsonsapi.com/api).
 - **Base URL**: `https://thesimpsonsapi.com/api`
