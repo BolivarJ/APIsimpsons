@@ -1,0 +1,128 @@
+/* App Styles - Springfield Chronicles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%);
+  color: #1f2937;
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+p {
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes donutFall {
+  from {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Botones mejorados */
+button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Selección de texto */
+::selection {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+::-moz-selection {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+/* Grid con animación */
+.grid {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Estilos generales */
+.container {
+  max-width: 1200px;
+}
+
+.donut {
+  position: absolute;
+  animation: donutFall linear infinite;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
