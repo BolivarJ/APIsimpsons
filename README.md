@@ -1,16 +1,24 @@
-# React + Vite
+# Springfield - Los Simpsons App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación interactiva construida con **React + Vite** y **Tailwind CSS** que permite explorar el universo de Los Simpsons utilizando su API oficial.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Explorador de Personajes**: Listado completo con imágenes de alta resolución desde el CDN oficial.
+- **Paginación Inteligente**: Navegación fluida a través de las 42 páginas de contenido (20 ítems por página).
+- **Efectos Visuales**: Lluvia de rosquillas animada y diseño estilo cómic.
+- **Hook Personalizado**: Implementación de `useFetch` para un consumo de datos optimizado y estable.
 
-## React Compiler
+## Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18**
+- **Vite** 
+- **Tailwind CSS** 
+- **The Simpsons API** 
 
-## Expanding the ESLint configuration
+## 📖 Sobre la API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Esta aplicación consume [The Simpsons API](https://thesimpsonsapi.com/api).
+- **Base URL**: `https://thesimpsonsapi.com/api`
+- **Imágenes**: Se utiliza el patrón de CDN `/500/` para optimizar la carga de portraits de personajes.
+- **Sin Autenticación**: La API es abierta y gratuita para desarrolladores.
